@@ -2770,6 +2770,7 @@ GameObject:
   - component: {fileID: 682395889}
   - component: {fileID: 682395894}
   - component: {fileID: 682395893}
+  - component: {fileID: 682395895}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2892,6 +2893,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &682395895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682395888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10a350eb1bad2443aa194c094b87f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelText: {fileID: 0}
+  hitpointText: {fileID: 0}
+  pesosText: {fileID: 0}
+  updgradeCostText: {fileID: 0}
+  xpText: {fileID: 0}
+  characterSelectionSprite: {fileID: 0}
+  weaponSprite: {fileID: 0}
+  xpBar: {fileID: 0}
 --- !u!1 &833043680
 GameObject:
   m_ObjectHideFlags: 0
@@ -16085,6 +16106,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: show
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 682395895}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: UpdateMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1132377072
