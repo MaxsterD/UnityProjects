@@ -2733,11 +2733,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bbf758cd3e09114ea24e7002efb6922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprites: []
-  weaponSprites: []
-  weaponPrices: 
+  playerSprites:
+  - {fileID: -1376497840, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -12344893, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -1408605625, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: 1838712469, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: 1812019181, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: 1533364362, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: 836506905, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -1879501145, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -709297884, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -1671620589, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -309346156, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: 1293493149, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  weaponSprites:
+  - {fileID: 2079997697, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -16543755, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -398370509, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: 587868992, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: 1380418325, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -2137579435, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: 1421255717, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  - {fileID: -1109744031, guid: 66877d829d666f14c92d0ec84aeaeb59, type: 3}
+  weaponPrices: 230000005000000078000000a0000000c80000002c010000f4010000
   xpTable: 
   player: {fileID: 1913707878}
+  weapon: {fileID: 845318513277720448}
   floatingTextManager: {fileID: 1160366839}
   pesos: 10
   experience: 0
@@ -2905,14 +2926,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10a350eb1bad2443aa194c094b87f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 0}
-  hitpointText: {fileID: 0}
-  pesosText: {fileID: 0}
-  updgradeCostText: {fileID: 0}
-  xpText: {fileID: 0}
-  characterSelectionSprite: {fileID: 0}
-  weaponSprite: {fileID: 0}
-  xpBar: {fileID: 0}
+  levelText: {fileID: 1044231549}
+  hitpointText: {fileID: 2017737540}
+  pesosText: {fileID: 1102685285}
+  updgradeCostText: {fileID: 2008321383}
+  xpText: {fileID: 2041836840}
+  characterSelectionSprite: {fileID: 83141039}
+  weaponSprite: {fileID: 1068854791}
+  xpBar: {fileID: 568332807}
 --- !u!1 &833043680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,7 +3235,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1005482854}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 682395895}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowclick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1005482854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3471,7 +3504,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1050906492}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 682395895}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnUpgradeClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1050906492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29562,7 +29607,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1572015989}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 682395895}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowclick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1572015989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30378,7 +30435,90 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6601950043951347437, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.data[1]
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.data[2]
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.data[3]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.data[4]
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.data[5]
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.data[6]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: pushForce.Array.data[7]
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.data[0]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.data[3]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.data[4]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.data[5]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.data[6]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+      propertyPath: damagePoint.Array.data[7]
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+--- !u!114 &845318513277720448 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7249481788620167297, guid: c6e1883e06a820e4dba670759b75d45e, type: 3}
+  m_PrefabInstance: {fileID: 845318513277720447}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 181650a6094a5a94881232f597d2e968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

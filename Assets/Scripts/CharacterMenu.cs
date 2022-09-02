@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class CharacterMenu : MonoBehaviour
 {
     // Text Fields
-    public Text levelText, hitpointText, pesosText, updgradeCostText, xpText;
+    public TextMeshProUGUI levelText, hitpointText, pesosText, updgradeCostText, xpText;
 
     // Logic Fields
     private int currentCharacterSelection = 0;
@@ -51,15 +52,19 @@ public class CharacterMenu : MonoBehaviour
 
     public void OnUpgradeClick()
     {
-
+        if (GameManager.instance.TryUpgradeWeapon())
+            UpdateMenu();
     }
 
     //update Character Information
     public void UpdateMenu()
     {
         //weapon
-        weaponSprite.sprite = GameManager.instance.weaponSprites[0];
-        updgradeCostText.text = "NOT IMPLEMENTED";
+        weaponSprite.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
+        if (GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
+            updgradeCostText.text = "NOT IMPLEMENTED";
+        else
+            updgradeCostText.text = GameManager.instance.weaponPrices[GameManager.instance.weapon.weaponLevel].ToString();
 
         //Meta
         levelText.text = "NOT IMPLEMENTED";

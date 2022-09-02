@@ -1426,7 +1426,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1434,6 +1434,216 @@ TextureImporter:
       bones: []
       spriteID: cde962b4514fc5d4f8817f7412774e1a
       internalID: 1739212483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995433dc4cd5d454ca4e77f1aea92b37
+      internalID: -1408605625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0aaa7dc88e58048aceb3c017fa7a88
+      internalID: 1838712469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dcba1ab36ae43e43a8d097b4c1f73f0
+      internalID: 1812019181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e87206d96c98546909e417142c590c
+      internalID: 1533364362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dc9e7fe104a5d449c008c091cd9f03
+      internalID: 836506905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995865a877c5cb5449abd8b71216a4d0
+      internalID: -1879501145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be6a5ed8b925584cac8cee001550d9b
+      internalID: -709297884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ceaa6b94651f584881cf2a760a3bd80
+      internalID: -1671620589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4381581ceb4633048a52020b620d999d
+      internalID: -309346156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f2b05fae9c2914aa3f2eaa0ba7b1ad
+      internalID: 1293493149
       vertices: []
       indices: 
       edges: []
@@ -1467,9 +1677,11 @@ TextureImporter:
       wall_3: 1439367428
       wall_5: 1164041590
       weapon_7: -1109744031
+      player_3: 1838712469
       torch_6: 1513251857
       crate_2: 1307738713
       weapon_3: 587868992
+      player_6: 836506905
       healingFountain_0: -1730481266
       torch_3: -1351661837
       crate_3: 2108168354
@@ -1480,24 +1692,30 @@ TextureImporter:
       chest_1: -1479125530
       enemy_0: 1129288534
       torch_4: -988581989
+      player_2: -1408605625
       weapon_5: -2137579435
       menu_0: 1739212483
       floor_6: 2067805748
       crate_0: -491695759
+      player_11: 1293493149
       wall_9: -137649407
       torch_5: 1776653754
       torch_1: 2123199223
       floor_0: -1084400324
       player_1: -12344893
       weapon_0: 2079997697
+      player_8: -709297884
       weapon_1: -16543755
       wall_2: -307748759
       wallPillar_2: 502777840
       wall_6: 907055644
+      player_4: 1812019181
+      player_5: 1533364362
       healingFountain_2: -1805177427
       floor_8: 1328068900
       floor_11: -2049948497
       torch_7: -2023666700
+      player_9: -1671620589
       wallPillar_1: 2100081123
       torch_8: 371560068
       floor_9: 1292333706
@@ -1507,11 +1725,13 @@ TextureImporter:
       floor_12: 1132822856
       stairs_2: -1181842096
       floor_3: -1631212078
+      player_10: -309346156
       stairs_3: 429092434
       pillar_0: 1290633696
       wall_7: -1925542968
       weapon_6: 1421255717
       crate_1: -358381173
+      player_7: -1879501145
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
