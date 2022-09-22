@@ -9,15 +9,22 @@ public abstract class Mover : Fighter
     protected RaycastHit2D hit;
     protected float ySpeed = 0.75f;
     protected float xSpeed = 1.0f;
+    protected float moveSpeed = 1.0f;
+    protected float activeMoveSpeed;
+    protected float dashSpeed = 3.0f;
+    protected float dashLength = .1f, dashCooldown = .75f;
+    protected float dashCounter, lastDash;
+    protected float dashCoolCounter;
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        activeMoveSpeed = moveSpeed;
     }
 
     protected virtual void UpdateMotor(Vector3 input)
     {
 
-        moveDelta = new Vector3(input.x * xSpeed ,input.y * ySpeed, 0);
+        moveDelta = new Vector3(input.x * activeMoveSpeed, input.y * activeMoveSpeed, 0);
 
         if (moveDelta.x > 0)
             transform.localScale = Vector3.one;
@@ -51,5 +58,37 @@ public abstract class Mover : Fighter
         {
             transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            
+            if(dashCoolCounter <=0 && dashCounter <= 0)
+            {
+                    
+                    activeMoveSpeed = dashSpeed;
+                    dashCounter = dashLength;
+      
+            }
+        }
+
+        if(dashCounter > 0)
+        {
+            
+            dashCounter -= Time.deltaTime;
+
+            if (dashCounter <= 0)
+            {
+                
+                activeMoveSpeed = moveSpeed;
+                dashCoolCounter = dashCooldown;
+            }
+        }
+
+        if (dashCoolCounter > 0)
+        {
+            
+            dashCoolCounter -= Time.deltaTime;
+        }
+
     }
 }
